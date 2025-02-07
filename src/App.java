@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import controllers.MazeSolverBFS;
+import controllers.MazeSolverDFS;
 import controllers.MazeSolverDP;
 import controllers.MazeSolverRecursivo;
 import controllers.interfaces.MazeSolver;
@@ -26,9 +27,10 @@ public class App {
         Cell end = new Cell(3, 3);
 
         List<MazeSolver> soluciones = Arrays.asList(
-            new MazeSolverRecursivo());
+            //new MazeSolverRecursivo());
             //new MazeSolverDP();
             //new MazeSolverBFS());
+            new MazeSolverDFS());
 
         int option = 1;
         MazeSolver solver = soluciones.get(1 - 1);

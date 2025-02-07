@@ -70,7 +70,6 @@ public class MazeSolverRecursivo implements MazeSolver{
 
         //visitados.remove(cell);
         path.remove(cell);
-
         return false;
     }
     
